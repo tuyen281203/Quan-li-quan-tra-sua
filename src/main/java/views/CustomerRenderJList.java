@@ -29,14 +29,13 @@ public class CustomerRenderJList extends javax.swing.JPanel implements ListCellR
         java.awt.GridBagConstraints gridBagConstraints;
 
         lbName = new javax.swing.JLabel();
-        lbAddress = new javax.swing.JLabel();
         lbPhoneNumber = new javax.swing.JLabel();
 
         setLayout(new java.awt.GridBagLayout());
 
         lbName.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         lbName.setForeground(new java.awt.Color(255, 0, 0));
-        lbName.setText("Trần Đức Cường");
+        lbName.setText("nguyen trung tuyen");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
@@ -47,20 +46,8 @@ public class CustomerRenderJList extends javax.swing.JPanel implements ListCellR
         gridBagConstraints.insets = new java.awt.Insets(5, 5, 5, 5);
         add(lbName, gridBagConstraints);
 
-        lbAddress.setText("Nghi Văn, Nghi Lộc, Nghệ An");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 1;
-        gridBagConstraints.gridwidth = 2;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.BASELINE_LEADING;
-        gridBagConstraints.weightx = 0.1;
-        gridBagConstraints.weighty = 0.1;
-        gridBagConstraints.insets = new java.awt.Insets(5, 5, 5, 5);
-        add(lbAddress, gridBagConstraints);
-
         lbPhoneNumber.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        lbPhoneNumber.setText("(0911175581)");
+        lbPhoneNumber.setText("(0367109962)");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 0;
@@ -72,7 +59,6 @@ public class CustomerRenderJList extends javax.swing.JPanel implements ListCellR
     }// </editor-fold>//GEN-END:initComponents
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel lbAddress;
     private javax.swing.JLabel lbName;
     private javax.swing.JLabel lbPhoneNumber;
     // End of variables declaration//GEN-END:variables
@@ -80,7 +66,6 @@ public class CustomerRenderJList extends javax.swing.JPanel implements ListCellR
     @Override
     public Component getListCellRendererComponent(JList<? extends Customer> list, Customer customer, int index, boolean isSelected, boolean cellHasFocus) {
         lbName.setText(customer.getName());
-        lbAddress.setText(customer.getAddress());
         lbPhoneNumber.setText(String.format("(%s)", customer.getPhoneNumber()));
         if (cellHasFocus) {
             setBackground(Color.LIGHT_GRAY);

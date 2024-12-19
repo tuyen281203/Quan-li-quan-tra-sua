@@ -190,7 +190,7 @@ public class EditOrderPopupView extends javax.swing.JFrame implements PopupView 
 
         lbEmployeeName.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         lbEmployeeName.setForeground(new java.awt.Color(255, 0, 0));
-        lbEmployeeName.setText("Trần Đức Cường");
+        lbEmployeeName.setText("Nguyen Trung Tuyen");
         lbEmployeeName.setToolTipText("");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;

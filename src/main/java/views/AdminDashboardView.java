@@ -118,7 +118,7 @@ public class AdminDashboardView extends javax.swing.JFrame {
 
         lbName.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         lbName.setForeground(new java.awt.Color(255, 255, 255));
-        lbName.setText("Trần Đức Cường");
+        lbName.setText("nguyen trung tuyen");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
